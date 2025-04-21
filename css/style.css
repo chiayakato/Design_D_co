@@ -1,39 +1,52 @@
 @charset "utf-8";
 body {
   font-family: "Didot", serif;
-  color: #dbd1d4;
+  color: #404040;
 }
 
 .hero {
   position: relative;
   height: 100vh;
-  background: url(../images/header.jpg);
+  background: url(../images/portfolio_image/header.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .logo {
   position: absolute;
   top: 30px;
   left: 30px;
+  width: 71px;
+}
+
+.nav {
+  position: absolute;
+  top: 30px;
+  right: 110px;
 }
 
 .nav ul {
   display: flex;
   gap: 90px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav a {
   color: #404040;
-  text-decoration: none;
   font-family: "Adobe Handwriting Ernie";
   font-size: 20px;
 }
-
+.my {
+  margin-right: 80px;
+}
 .hero-text {
   max-width: 80%;
+  padding-left: 100px;
 }
 
 .hero-text h1 {
@@ -49,4 +62,67 @@ body {
   text-orientation: mixed;
   font-size: 24px;
   color: #d0a9a9;
+}
+
+.About {
+  position: relative;
+  background: url(../images/portfolio_image/back1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  position: absolute;
+  top: 294px;
+  left: 212px;
+}
+
+.about_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.about_body {
+  margin-left: 721px;
+  text-align: left;
+  margin-left: 212px;
+  top: 230px;
+}
+
+.works_container {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 60px auto;
+}
+
+.works {
+  position: relative;
+}
+
+.works img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.works p {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  margin: 0;
+  color: #404040;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: Abril Display Reguler;
+  border-radius: 4px;
+}
+
+.Contact {
+  background: url(../images/portfolio_image/back2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
