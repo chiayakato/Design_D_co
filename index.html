@@ -107,6 +107,7 @@
                 <p>burger shop banner</p>
             </div>
         </div>
+
         <div class="works_container">
             <div>
                 <img src="./images/portfolio_image/work5.png" alt="モバイルプランバナー">
@@ -124,6 +125,11 @@
         </div>
 
     </section>
+
+    <div id="overlay" class="overlay">
+        <span class="close-button">CLOSE</span>
+        <img id="overlay-image" src="" alt="拡大画像">
+    </div>
 
     <section class="Contact">
         <img src="./images/portfolio_image/Contant.png" alt="Contact">
@@ -146,6 +152,25 @@
     <footer class="footer">
         <img src="./images/portfolio_image/footer.jpg" alt="フッター" class="footer-img">
     </footer>
+
+    <script>
+
+        const workImages = document.querySelectorAll('.works_container img');
+        const overlay = document.getElementById('overlay');
+        const overlayImage = document.getElementById('overlay-image');
+        const closeButton = document.querySelector('.close-button');
+
+        workImages.forEach(img => {
+            img.addEventListener('click', function () {
+                overlay.style.display = 'flex';
+                overlayImage.src = this.src;
+            });
+        });
+
+        closeButton.addEventListener('click', function () {
+            overlay.style.display = 'none';
+        });
+    </script>
 
 </body>
 
