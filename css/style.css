@@ -2,6 +2,7 @@
 body {
   font-family: "Didot", serif;
   color: #404040;
+  background-color: #f0e8e8;
 }
 
 .hero {
@@ -11,8 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
 }
 
 .logo {
@@ -38,30 +39,64 @@ body {
 
 .nav a {
   color: #404040;
-  font-family: "Adobe Handwriting Ernie";
+  font-family: "adobe-handwriting-ernie", sans-serif;
   font-size: 20px;
 }
 .my {
   margin-right: 80px;
 }
 .hero-text {
+  position: absolute;
+  bottom: -18px;
+  left: 100px;
+  color: #f0e8e8;
+
   max-width: 80%;
-  padding-left: 100px;
 }
 
 .hero-text h1 {
   font-size: 225px;
   color: #f0e8e8;
+  line-height: 0.8;
 }
 
 .scroll-text {
   position: absolute;
-  bottom: 30px;
+  bottom: -100px;
   right: 145px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 24px;
   color: #d0a9a9;
+}
+
+.scroll-text span {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.scroll-text::after {
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: 118px;
+  background-color: #be6763;
+  margin: 10px;
+  animation: scrollMove 2s infinite;
+}
+
+@keyframes scrollMove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .About {
@@ -69,38 +104,91 @@ body {
   background: url(../images/portfolio_image/back1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.icon {
-  position: absolute;
-  top: 294px;
-  left: 212px;
+  padding: 200px 0 200px 0;
 }
 
 .about_header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 40px;
+  gap: 100px;
+  margin: 0 auto;
+}
+
+.icon img {
+  display: block;
 }
 
 .about_body {
-  margin-left: 721px;
   text-align: left;
-  margin-left: 212px;
-  top: 230px;
+  color: #404040;
+}
+
+.about_title img {
+  margin-bottom: 75px;
+}
+
+.about-role {
+  font-family: abril-display, serif;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.about-name {
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 60px;
+
+  margin-bottom: 72px;
+}
+
+.profile-heading {
+  font-family: abril-display, serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
+
+.about-text {
+  font-family: zen-old-mincho, sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 80px;
+}
+
+.view_more p {
+  display: inline-block;
+  padding: 20px 64px;
+  border: 1px solid #be6763;
+  border-radius: 999px;
+  font-size: 16px;
+  color: #be6763;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.view_more p:hover {
+  background-color: #be6763;
+  color: #fff;
+}
+
+.Works img {
+  display: block;
+  margin: 115px auto 0;
+  margin-bottom: 118px;
 }
 
 .works_container {
   display: flex;
-  gap: 40px;
+  gap: 80px;
   max-width: 1000px;
   margin: 60px auto;
 }
 
 .works {
   position: relative;
+  margin-top: 115px;
+  margin-bottom: 220px;
 }
 
 .works img {
@@ -110,14 +198,12 @@ body {
 }
 
 .works p {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+  margin-top: 80px;
   margin: 0;
   color: #404040;
   padding: 6px 12px;
   font-size: 14px;
-  font-family: Abril Display Reguler;
+  font-family: "Abril Display", serif;
   border-radius: 4px;
 }
 
@@ -125,11 +211,18 @@ body {
   background: url(../images/portfolio_image/back2.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  padding-top: 85px;
+  padding-bottom: 248px;
+}
+.Contact p {
+  text-align: center;
+  margin-bottom: 130px;
 }
 
 .Contact img {
   display: block;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .contact-form {
@@ -137,7 +230,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 80px;
 }
 
 .contact-input {
@@ -159,4 +252,11 @@ body {
   font-size: 16px;
   resize: none;
   color: #404040;
+}
+
+.footer-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
