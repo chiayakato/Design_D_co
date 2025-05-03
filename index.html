@@ -47,15 +47,15 @@
             <img src="./images/portfolio_image/logo.svg" alt="サイトロゴ">
         </div>
 
-
-
         <nav class="nav">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#works">Works</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
+
+
 
 
         <div class="hero-text">
@@ -184,10 +184,10 @@
         <form class="contact-form"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVn60PaGqdszfWykrBNeoL03XTGyyXJeR41VAavje4KHot0g/formResponse"
             method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-            <input type="text" name="entry.386743923" placeholder="会社名" class="contact-input" />
-            <input type="text" name="entry.1861499850" placeholder="名前＊" class="contact-input" required />
-            <input type="email" name="entry.162070797" placeholder="メールアドレス＊" class="contact-input" required />
-            <textarea name="entry.260701588" placeholder="お問い合わせ内容＊" class="contact-textarea" required></textarea>
+            <input type="text" name="entry.934686553" placeholder="会社名" class="contact-input" />
+            <input type="text" name="entry.1624044969" placeholder="名前＊" class="contact-input" required />
+            <input type="email" name="entry.401490856" placeholder="メールアドレス＊" class="contact-input" required />
+            <textarea name="entry.808948598" placeholder="お問い合わせ内容＊" class="contact-textarea" required></textarea>
 
             <button type="submit" class="contact-button">submit</button>
         </form>
@@ -199,17 +199,7 @@
 
 
 
-    <script>
-        const topButton = document.querySelector(".back-to-top");
 
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 500) {
-                topButton.classList.add("show");
-            } else {
-                topButton.classList.remove("show");
-            }
-        });
-    </script>
 
     <a href="#top" class="back-to-top">
         ▲
@@ -234,12 +224,22 @@
 
     <div class="remodal" data-remodal-id="modal1">
         <button data-remodal-action="close" class="remodal-close"></button>
-        <img src="./images/portfolio_image/work/cafe2.png" alt="作品1拡大画像">
+        <div>
+            <img class="cafe_pc" src="./images/portfolio_image/work/cafe2.png" alt="作品1拡大画像">
+            <img class="cafe_sp" src="./images/portfolio_image/work/cafe_sp2.png" alt="作品1拡大画像">
+        </div>
+
+
+
     </div>
 
     <div class="remodal" data-remodal-id="modal2">
         <button data-remodal-action="close" class="remodal-close"></button>
-        <img src="./images/portfolio_image/work/coworking.jpg" alt="作品2拡大画像">
+        <div>
+            <img class="cafe_pc" src="./images/portfolio_image/work/coworking.jpg" alt="作品2拡大画像（PC）">
+            <img class="cafe_sp" src="./images/portfolio_image/work/coworking_sp.jpg" alt="作品2拡大画像（SP）">
+        </div>
+
     </div>
 
     <div class="remodal" data-remodal-id="modal3">

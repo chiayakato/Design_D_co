@@ -27,46 +27,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"
         integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body class="about-page">
 
     <header class="hero-about">
         <div class="logo">
-            <img src="./images/portfolio_image/logo.svg" alt="サイトロゴ">
-        </div>
-
-
-
-        <nav class="nav">
-            <ul>
-                <li><a href="#itsme">It's me</a></li>
-                <li><a href="#sns">SNS</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#composite">Composite</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-
-        <div class="hero-text">
-            <h1>
-                <span class="in">in </span>
-                <span class="my">my</span><br>
-                <span class="room">room</span>
-            </h1>
+            <a href="index.html"><img src="./images/portfolio_image/logo.svg" alt="サイトロゴ"></a>
 
         </div>
 
-
-
-        <p class="scroll-text">
-            <span>scroll</span>
-        </p>
 
     </header>
 
-    <section class="About" id="about">
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#works">Works</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="hero-text">
+        <h1>
+            <span class="in">in </span>
+            <span class="my">my</span><br>
+            <span class="room">room</span>
+        </h1>
+
+    </div>
+
+
+    <p class="scroll-text">
+        <span>scroll</span>
+    </p>
+
+
+
+    <section class="About">
         <div class="about_header">
             <div class="icon">
                 <img src="./images/portfolio_image/icon.png" alt="アイコン">
@@ -95,60 +100,54 @@
         </div>
     </section>
 
-    <section class="Works" id="works">
+    <section class="SNS">
 
-        <img src="./images/portfolio_image/sns.png" alt="Works">
+        <img src="./images/portfolio_image/sns.png" alt="SNS">
 
-        <div class="works_container">
-            <div>
-                <img src="./images/portfolio_image/work1.png" alt="カフェサイトデザイン">
-                <p>cafe WEBsite</p>
+        <a href="https://www.tiktok.com/@chia_biyomeshi" target="_blank" class="sns-card">
+            <div class="sns-left">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
             </div>
-
-            <div>
-                <img src="./images/portfolio_image/work2.png" alt="コワーキングスペースサイトデザイン">
-                <p>coworking space WEBsite</p>
+            <div class="sns-right">
+                <i class="fas fa-chevron-right"></i>
             </div>
-        </div>
-        <div class="works_container">
-            <div>
-                <img src="./images/portfolio_image/work3.png" alt="ハンバーガーショップバナー1">
-                <p>burger shop banner</p>
+        </a>
+
+
+        <a href="https://www.instagram.com/ebimi_benizy" target="_blank" class="sns-card">
+            <div class="sns-left">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
             </div>
-
-
-            <div>
-                <img src="./images/portfolio_image/work4.png" alt="ハンバーガーショップバナー2">
-                <p>burger shop banner</p>
+            <div class="sns-right">
+                <i class="fas fa-chevron-right"></i>
             </div>
-        </div>
+        </a>
 
-        <div class="works_container">
-            <div>
-                <img src="./images/portfolio_image/work5.png" alt="モバイルプランバナー">
-                <p>mobile plan banner</p>
+
+        <a href="https://www.youtube.com/@chia_biyomeshi" target="_blank" class="sns-card">
+            <div class="sns-left">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
             </div>
-
-            <div>
-                <img src="./images/portfolio_image/work6.png" alt="アイスクリームショップバナー">
-                <p>ice cream shop banner</p>
-
+            <div class="sns-right">
+                <i class="fas fa-chevron-right"></i>
             </div>
-
-
-
-        </div>
+        </a>
 
     </section>
 
-    <div id="overlay" class="overlay">
-        <span class="close-button">CLOSE</span>
-        <img id="overlay-image" src="" alt="拡大画像">
-    </div>
 
-    <script>
-        var submitted = false;
-    </script>
+
+
+
+
+
+
+
+
+
 
     <section class="experience">
         <img src="./images/portfolio_image/experience.png" alt="Experience">
@@ -177,51 +176,41 @@
         </p>
     </section>
 
-    <section class="Works" id="works">
 
-        <img src="./images/portfolio_image/composite.png" alt="Composite">
+    <section class="composite">
+        <img src="./images/portfolio_image/composite.png" alt="Composite" class="composite-title" />
 
-        <div class="works_container">
-            <div>
-                <img src="./images/portfolio_image/work1.png" alt="カフェサイトデザイン">
-                <p>cafe WEBsite</p>
-            </div>
-
-            <div>
-                <img src="./images/portfolio_image/work2.png" alt="コワーキングスペースサイトデザイン">
-                <p>coworking space WEBsite</p>
-            </div>
-        </div>
-        <div class="works_container">
-            <div>
-                <img src="./images/portfolio_image/work3.png" alt="ハンバーガーショップバナー1">
-                <p>burger shop banner</p>
-            </div>
-
-
-            <div>
-                <img src="./images/portfolio_image/work4.png" alt="ハンバーガーショップバナー2">
-                <p>burger shop banner</p>
-            </div>
+        <div class="composite-row">
+            <a href="#modal1"><img src="./images/portfolio_image/1.jpg" alt="写真1" /></a>
+            <a href="#modal2"><img src="./images/portfolio_image/2.jpg" alt="写真2" /></a>
         </div>
 
-        <div class="works_container">
-            <div>
-                <img src="./images/portfolio_image/work5.png" alt="モバイルプランバナー">
-                <p>mobile plan banner</p>
-            </div>
-
-            <div>
-                <img src="./images/portfolio_image/work6.png" alt="アイスクリームショップバナー">
-                <p>ice cream shop banner</p>
-
-            </div>
-
-
-
+        <div class="composite-row">
+            <a href="#modal3"><img src="./images/portfolio_image/3.jpg" alt="写真3" /></a>
+            <a href="#modal4"><img src="./images/portfolio_image/4.jpg" alt="写真4" /></a>
+            <a href="#modal5"><img src="./images/portfolio_image/5.jpg" alt="写真5" /></a>
         </div>
 
+        <div class="composite-row">
+            <a href="#modal6"><img src="./images/portfolio_image/6.jpg" alt="写真6" /></a>
+            <a href="#modal7"><img src="./images/portfolio_image/7.jpg" alt="写真7" /></a>
+        </div>
+
+        <div class="composite-row">
+            <a href="#modal8"><img src="./images/portfolio_image/8.jpg" alt="写真8" /></a>
+            <a href="#modal9"><img src="./images/portfolio_image/9.jpg" alt="写真9" /></a>
+        </div>
+
+        <div class="composite-row">
+            <a href="#modal10"><img src="./images/portfolio_image/10.jpg" alt="写真10" /></a>
+        </div>
     </section>
+
+
+
+
+
+
 
 
     <section class="Contact" id="contact">
@@ -251,17 +240,7 @@
 
 
 
-    <script>
-        const topButton = document.querySelector(".back-to-top");
 
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 500) {
-                topButton.classList.add("show");
-            } else {
-                topButton.classList.remove("show");
-            }
-        });
-    </script>
 
     <a href="#top" class="back-to-top">
         ▲
@@ -284,6 +263,47 @@
         });
     </script>
 
+
+    <div class="remodal" data-remodal-id="modal1">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c1.jpg" alt="写真1 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal2">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c2.jpg" alt="写真2 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal3">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c3.jpg" alt="写真3 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal4">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c4.jpg" alt="写真4 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal5">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c5.jpg" alt="写真5 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal6">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c6.jpg" alt="写真6 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal7">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c7.jpg" alt="写真7 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal8">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c8.jpg" alt="写真8 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal9">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c9.jpg" alt="写真9 拡大" />
+    </div>
+    <div class="remodal" data-remodal-id="modal10">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <img src="./images/portfolio_image/コンポジット/c10.jpg" alt="写真10 拡大" />
+    </div>
 
 </body>
 

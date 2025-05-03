@@ -22,6 +22,32 @@ html {
   z-index: 1000;
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    background: url(../images/portfolio_image/header5.jpg);
+    animation-name: fadeBg_sp;
+  }
+}
+
+@keyframes fadeBg_sp {
+  0% {
+    background: url(../images/portfolio_image/header5.jpg) center center / cover
+      no-repeat;
+  }
+  50% {
+    background: url(../images/portfolio_image/header2.jpg) center center / cover
+      no-repeat;
+  }
+  80% {
+    background: url(../images/portfolio_image/header2.jpg) center center / cover
+      no-repeat;
+  }
+  100% {
+    background: url(../images/portfolio_image/header5.jpg) center center / cover
+      no-repeat;
+  }
+}
+
 @keyframes fadeBg {
   0% {
     background: url(../images/portfolio_image/header.jpg) center center / cover
@@ -52,6 +78,7 @@ html {
   position: absolute;
   top: 30px;
   right: 110px;
+  z-index: 1001;
 }
 
 .nav ul {
@@ -275,6 +302,20 @@ html {
   cursor: pointer;
 }
 
+.remodal div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.remodal div .cafe_pc {
+  width: 50%;
+  margin-right: 10%;
+}
+.remodal div .cafe_sp {
+  width: 15%;
+}
+
 .Contact {
   background: url(../images/portfolio_image/back2.jpg);
   background-size: cover;
@@ -385,7 +426,7 @@ body.about-page .hero-about {
   justify-content: center;
   background-size: cover;
   overflow: visible;
-  animation: fadeBg 10s ease-in-out infinite;
+  animation: fadeBgAbout 10s ease-in-out infinite;
   z-index: 1000;
 }
 
@@ -407,16 +448,142 @@ body.about-page .hero-about {
       no-repeat;
   }
 }
+
+.logo img {
+  transition: all 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.SNS img {
+  display: block;
+  margin: 115px auto 0;
+  margin-bottom: 118px;
+}
+
+.sns-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 0 auto 30px;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sns-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.sns-card:last-of-type {
+  margin-bottom: 115px;
+}
+
+.sns-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sns-left i {
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #404040;
+}
+
+.sns-left .fa-youtube {
+  font-size: 32px;
+  transform: translateY(1px);
+  color: #be6763;
+}
+
+.sns-left span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sns-right i {
+  font-size: 14px;
+  color: #404040;
+}
+
+.sns-left .fa-tiktok {
+  color: #be6763;
+}
+.sns-left .fa-instagram {
+  color: #be6763;
+}
+
 .experience {
   position: relative;
   background: url(../images/portfolio_image/back3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 200px 0 200px 0;
+  padding-top: 113px;
+  padding-bottom: 94px;
 }
 
-.experience > img {
+.experience img {
   display: block;
-  margin: 115px auto 0;
-  margin-bottom: 118px;
+  margin: 113px auto 118px;
+}
+
+.experience p {
+  text-align: center;
+  line-height: 2;
+}
+
+.experience p br:last-of-type {
+  display: block;
+  content: "";
+  margin-bottom: 40px;
+}
+
+.composite {
+  padding: 120px 0;
+  background-color: #f9eeee;
+  text-align: center;
+}
+
+.composite-title {
+  display: block;
+  margin: 0 auto 60px;
+}
+
+.composite-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: nowrap;
+}
+
+.composite-row img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+.composite-row a img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.composite-row a:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
