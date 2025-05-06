@@ -259,7 +259,7 @@ html {
   padding-bottom: 115px;
 }
 
-.Works > img {
+.works_img img {
   display: block;
   margin: 115px auto 0;
   margin-bottom: 118px;
@@ -290,9 +290,9 @@ html {
   display: block;
 }
 
-.works p {
-  margin-top: 10px;
-  margin: 0;
+.Works p {
+  margin-top: 30px;
+
   color: #404040;
   padding-left: 60px;
   font-size: 14px;
@@ -732,10 +732,28 @@ body.about-page .hero-about {
   }
 
   .mobile-nav a {
+    position: relative;
     text-decoration: none;
     color: #404040;
     font-size: 18px;
     font-family: "Didot", serif;
+  }
+
+  .mobile-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #be6763;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+  }
+
+  .mobile-nav a:hover::after {
+    transform: scaleX(1);
   }
 
   .nav {
@@ -1028,13 +1046,13 @@ body.about-page .hero-about {
   }
 }
 
-.fadeIn_up {
+.inview {
   opacity: 0;
   transform: translateY(50%);
   transition: 0.8s ease;
 }
 
-.fadeIn_up.is-show {
+.inview.is-show {
   opacity: 1;
   transform: translateY(0);
 }

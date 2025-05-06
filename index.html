@@ -95,7 +95,7 @@
 
 
     <section class="About" id="about">
-        <div class="about_header">
+        <div class="about_header inview">
             <div class="icon">
                 <div class="icon">
                     <img src="./images/portfolio_image/icon.png" alt="アイコン">
@@ -104,7 +104,7 @@
 
             <div class="about_body">
                 <div class="about_title">
-                    <img src="./images/portfolio_image/About.png" alt="About">
+                    <img src="./images/portfolio_image/SVG/about.svg" alt="About">
                 </div>
 
                 <p class="about-role">web designer / s size model</p>
@@ -129,9 +129,12 @@
 
     <section class="Works" id="works">
 
-        <img src="./images/portfolio_image/works.png" alt="Works">
+        <div class="works_img inview">
+            <img src="./images/portfolio_image/SVG/works.svg" alt="Works">
 
-        <div class="works_container">
+        </div>
+
+        <div class="works_container inview">
             <div>
                 <a href="#modal1" class="work-item">
                     <img src="./images/portfolio_image/work1.png" alt="カフェサイトデザイン">
@@ -147,7 +150,7 @@
                 <p>coworking space WEBsite</p>
             </div>
         </div>
-        <div class="works_container">
+        <div class="works_container inview">
             <div>
                 <a href="#modal3" class="work-item"><img src="./images/portfolio_image/work3.png"
                         alt="ハンバーガーショップバナー1"></a>
@@ -165,7 +168,7 @@
             </div>
         </div>
 
-        <div class="works_container">
+        <div class="works_container inview">
             <div>
                 <a href="#modal5" class="work-item">
                     <img src="./images/portfolio_image/work5.png" alt="モバイルプランバナー">
@@ -196,29 +199,34 @@
     </script>
 
     <section class="Contact" id="contact">
-        <img src="./images/portfolio_image/Contant.png" alt="Contact" />
+        <div class="contact inview">
+            <img src="./images/portfolio_image/SVG/contact.svg" alt="Contact" />
 
-        <p>
-            当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。<br />
-            制作のご依頼やご質問など、まずはお気軽にご相談ください。<br />
-            2営業日以内にご連絡をさせていただきます。
-        </p>
+            <p>
+                当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。<br />
+                制作のご依頼やご質問など、まずはお気軽にご相談ください。<br />
+                2営業日以内にご連絡をさせていただきます。
+            </p>
 
-        <form class="contact-form"
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVn60PaGqdszfWykrBNeoL03XTGyyXJeR41VAavje4KHot0g/formResponse"
-            method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-            <input type="text" name="entry.934686553" placeholder="会社名" class="contact-input" />
-            <input type="text" name="entry.1624044969" placeholder="名前＊" class="contact-input" required />
-            <input type="email" name="entry.401490856" placeholder="メールアドレス＊" class="contact-input" required />
-            <textarea name="entry.808948598" placeholder="お問い合わせ内容＊" class="contact-textarea" required></textarea>
+            <form class="contact-form"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVn60PaGqdszfWykrBNeoL03XTGyyXJeR41VAavje4KHot0g/formResponse"
+                method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                <input type="text" name="entry.934686553" placeholder="会社名" class="contact-input" />
+                <input type="text" name="entry.1624044969" placeholder="名前＊" class="contact-input" required />
+                <input type="email" name="entry.401490856" placeholder="メールアドレス＊" class="contact-input" required />
+                <textarea name="entry.808948598" placeholder="お問い合わせ内容＊" class="contact-textarea" required></textarea>
 
-            <button type="submit" class="contact-button">submit</button>
-        </form>
+                <button type="submit" class="contact-button">submit</button>
+            </form>
 
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-            onload="if(submitted) { window.location='thanks.html'; }"></iframe>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                onload="if(submitted) { window.location='thanks.html'; }"></iframe>
+        </div>
     </section>
+
+
+
 
 
 
@@ -318,7 +326,7 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
     <script>
         $(function () {
             $(".inview").on("inview", function (event, isInView) {
