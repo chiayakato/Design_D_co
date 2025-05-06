@@ -56,6 +56,24 @@
         </nav>
 
 
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+
+
 
 
         <div class="hero-text">
@@ -75,14 +93,18 @@
 
     </header>
 
+
     <section class="About" id="about">
         <div class="about_header">
             <div class="icon">
-                <img src="./images/portfolio_image/icon.png" alt="アイコン">
+                <div class="icon">
+                    <img src="./images/portfolio_image/icon.png" alt="アイコン">
+                </div>
             </div>
+
             <div class="about_body">
                 <div class="about_title">
-                    <img src="./images/portfolio_image/about.png" alt="About">
+                    <img src="./images/portfolio_image/About.png" alt="About">
                 </div>
 
                 <p class="about-role">web designer / s size model</p>
@@ -103,6 +125,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="Works" id="works">
 
@@ -261,6 +284,54 @@
         <button data-remodal-action="close" class="remodal-close"></button>
         <img src="./images/portfolio_image/work/icecream.png" alt="作品6拡大画像">
     </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileNav.classList.toggle('open');
+            document.body.classList.toggle("no-scroll");
+
+            if (mobileNav.classList.contains('open')) {
+                mobileNav.style.display = 'flex';
+            } else {
+                mobileNav.style.display = 'none';
+            }
+            // モバイルメニュー内のリンクをすべて取得
+            const mobileLinks = document.querySelectorAll('.mobile-nav a');
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // メニュー閉じる処理
+                    hamburger.classList.remove('open');
+                    mobileNav.classList.remove('open');
+                    document.body.classList.remove('no-scroll');
+                    mobileNav.style.display = 'none'; // displayも戻す！
+                });
+            });
+
+        });
+
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script>
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).addClass("is-show");
+                }
+            });
+        });
+    </script>
+
+
+
+
 </body>
 
 </html>

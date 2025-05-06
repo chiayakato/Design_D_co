@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417 150.8">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .5em;
+      }
+
+      .cls-2 {
+        fill: #be6763;
+        font-family: AdobeHandwriting-Ernie, 'Adobe Handwriting';
+        font-size: 80px;
+      }
+    </style>
+  </defs>
+  <g id="text">
+    <text class="cls-2" transform="translate(40.83 73.92)"><tspan x="0" y="0">It</tspan><tspan class="cls-1" x="101.84" y="0">’</tspan><tspan x="162.72" y="0">s me</tspan></text>
+  </g>
+</svg>
