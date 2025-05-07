@@ -556,7 +556,7 @@ body.about-page .hero-about {
   background: url(../images/portfolio_image/back3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 113px;
+  padding-top: 10px;
   padding-bottom: 94px;
 }
 
@@ -992,7 +992,6 @@ body.about-page .hero-about {
 
 @media screen and (max-width: 767px) {
   .experience {
-    padding: 80px 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
