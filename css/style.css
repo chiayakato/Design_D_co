@@ -479,6 +479,36 @@ body.about-page .hero-about {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  body.about-page .hero-about {
+    background: url(../images/portfolio_image/header7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  @keyframes fadeBgAbout_sp {
+    0% {
+      background: url(../images/portfolio_image/header7.jpg) center center /
+        cover no-repeat;
+    }
+    50% {
+      background: url(../images/portfolio_image/header8.jpg) center center /
+        cover no-repeat;
+    }
+    100% {
+      background: url(../images/portfolio_image/header7.jpg) center center /
+        cover no-repeat;
+    }
+  }
+
+  body.about-page .hero-about {
+    animation-name: fadeBgAbout_sp;
+  }
+}
+
 .SNS img {
   display: block;
   margin: 115px auto 0;
@@ -967,6 +997,11 @@ body.about-page .hero-about {
     width: 100%;
     font-size: 14px;
     padding: 10px;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    border-radius: 0; /* ← 角をまっすぐに */
   }
 
   .contact-textarea {
