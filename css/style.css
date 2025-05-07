@@ -813,9 +813,9 @@ body.about-page .hero-about {
 }
 
 @media screen and (max-width: 767px) {
-  .About {
+  .about {
     padding: 100px 20px;
-    background: url(../images/portfolio_image/back1_sp.jpg);
+    background: url(../images/portfolio_image/back1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -992,6 +992,7 @@ body.about-page .hero-about {
 
 @media screen and (max-width: 767px) {
   .experience {
+    background: url(../images/portfolio_image/back_sp_ex.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
