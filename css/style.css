@@ -894,14 +894,14 @@ body.about-page .hero-about {
 }
 
 @media screen and (max-width: 767px) {
-  .Works {
-    padding: 100px 20px;
-  }
-
   .Works > img {
     width: 150px;
-    margin: 0 auto 60px;
     display: block;
+  }
+
+  .works_img img {
+    display: block;
+    margin-bottom: 118px;
   }
 
   .works_container {
