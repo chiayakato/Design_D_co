@@ -712,7 +712,7 @@ body.about-page .hero-about {
     position: fixed;
     top: 0;
     right: 0;
-    background: #f8eded;
+    background: rgba(248, 237, 237, 0.85);
     width: 200px;
     height: 100vh;
     padding-top: 100px;
