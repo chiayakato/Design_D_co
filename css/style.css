@@ -9,6 +9,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.section-title {
+  width: 150px;
+  margin: 0 auto 60px;
+  display: block;
+}
+
 .hero {
   position: relative;
   height: 100vh;
@@ -571,11 +577,6 @@ body.about-page .hero-about {
   padding: 120px 0;
   background-color: #f9eeee;
   text-align: center;
-}
-
-.composite-title {
-  display: block;
-  margin: 0 auto 60px;
 }
 
 .composite-row {

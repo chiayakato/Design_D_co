@@ -89,13 +89,13 @@
 
 
     <section class="About" id="profile">
-        <div class="about_header">
+        <div class="about_header inview">
             <div class="icon">
                 <img src="./images/portfolio_image/icon.png" alt="アイコン">
             </div>
             <div class="about_body">
                 <div class="about_title">
-                    <img src="./images/portfolio_image/SVG/itsme.svg" alt="It's me">
+                    <img src="./images/portfolio_image/SVG/itsme.svg" alt="It's me" class="section-title">
                 </div>
 
                 <p class="about-role">web designer / s size model</p>
@@ -118,9 +118,12 @@
     </section>
 
     <section class="SNS" id="sns">
-        <img src="./images/portfolio_image/SVG/sns.svg" alt="SNS">
+        <div class="sns_img inview">
+            <img src="./images/portfolio_image/SVG/sns.svg" alt="SNS" class="section-title">
+        </div>
 
-        <div class="sns-wrapper">
+
+        <div class="sns-wrapper inview">
             <a href="https://www.tiktok.com/@chia_biyomeshi" target="_blank" class="sns-card">
                 <div class="sns-left">
                     <i class="fab fa-tiktok"></i>
@@ -163,37 +166,45 @@
 
 
     <section class="experience" id="experience">
-        <img src="./images/portfolio_image/SVG/experience.svg" alt="Experience">
+        <div class="experience_img inview">
+            <img src="./images/portfolio_image/SVG/experience.svg" alt="Experience" class="section-title">
+        </div>
 
-        <p>
-            Miss Campus KANDAI 2020 準グランプリ<br>
-            Miss Of Miss 2021 ミスコレ賞<br>
-            MBSラジオ『イマドキッJDナイト』レギュラー<br>
-            美学生図鑑 10th Anniversary Photo Book <br>
-            Agrow Hiejima/Sunday MV主演 <br>
-            島根県安来市 観光PR動画<br>
-            BeeHeartB×ZERU. カラコンイメージモデル<br>
-            nissen petitjo アパレルモデル<br>
-            nairo アパレルモデル<br>
-            雑誌『ar』ヘアモデル<br>
-            古野整形外科 ポスター広告モデル<br>
-            ニュートラルコスメブランド『iLLO』公式アンバサダーモデル<br>
-            袴レンタルセルフィット パンフレット『selfit ハカマなワタシ hakama style book 2022』<br>
-            Lazy Lie Crazy【レイクレ】 Youtube出演<br>
-            株式会社濱田 ショート動画出演<br>
+        <div class="experience_p inview">
+            <p>
+                Miss Campus KANDAI 2020 準グランプリ<br>
+                Miss Of Miss 2021 ミスコレ賞<br>
+                MBSラジオ『イマドキッJDナイト』レギュラー<br>
+                美学生図鑑 10th Anniversary Photo Book <br>
+                Agrow Hiejima/Sunday MV主演 <br>
+                島根県安来市 観光PR動画<br>
+                BeeHeartB×ZERU. カラコンイメージモデル<br>
+                nissen petitjo アパレルモデル<br>
+                nairo アパレルモデル<br>
+                雑誌『ar』ヘアモデル<br>
+                古野整形外科 ポスター広告モデル<br>
+                ニュートラルコスメブランド『iLLO』公式アンバサダーモデル<br>
+                袴レンタルセルフィット パンフレット『selfit ハカマなワタシ hakama style book 2022』<br>
+                Lazy Lie Crazy【レイクレ】 Youtube出演<br>
+                株式会社濱田 ショート動画出演<br>
 
 
 
-            and more...
+                and more...
 
-        </p>
+            </p>
+        </div>
+
     </section>
 
 
     <section class="composite" id="composite">
-        <img src="./images/portfolio_image/SVG/composite.svg" alt="Composite" class="composite-title" />
+        <div class="composite_img inview">
+            <img src="./images/portfolio_image/SVG/composite.svg" alt="Composite" class="section-title">
 
-        <div class="composite-wrapper">
+        </div>
+
+        <div class="composite-wrapper inview">
             <div class="composite-row">
                 <a href="#modal1"><img src="./images/portfolio_image/1.jpg" alt="写真1" /></a>
                 <a href="#modal2"><img src="./images/portfolio_image/2.jpg" alt="写真2" /></a>
@@ -227,15 +238,18 @@
 
 
     <section class="Contact" id="contact">
-        <img src="./images/portfolio_image/SVG/contact.svg" alt="Contact" />
+        <div class="contact inview">
+            <img src="./images/portfolio_image/SVG/contact.svg" alt="Contact" class="section-title">
 
-        <p>
-            当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。<br />
-            制作のご依頼やご質問など、まずはお気軽にご相談ください。<br />
-            2営業日以内にご連絡をさせていただきます。
-        </p>
+            <p>
+                当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。<br />
+                制作のご依頼やご質問など、まずはお気軽にご相談ください。<br />
+                2営業日以内にご連絡をさせていただきます。
+            </p>
+        </div>
 
-        <form class="contact-form"
+
+        <form class="contact-form inview"
             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVn60PaGqdszfWykrBNeoL03XTGyyXJeR41VAavje4KHot0g/formResponse"
             method="POST" target="hidden_iframe" onsubmit="submitted=true;">
             <input type="text" name="entry.386743923" placeholder="会社名" class="contact-input" />
@@ -334,6 +348,18 @@
                 hamburger.classList.remove('open');
                 mobileNav.classList.remove('open');
                 document.body.classList.remove("no-scroll");
+            });
+        });
+    </script>
+
+
+    <script src="./jquery.inview.min.js"></script>
+    <script>
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).addClass("is-show");
+                }
             });
         });
     </script>
