@@ -358,12 +358,13 @@
     <script src="./jquery.inview.min.js"></script>
     <script>
         $(function () {
-            $(".inview").on("inview", function (event, isInView) {
-                if (isInView) {
+            $(".inview").on("inview", function (event, isInView, visiblePartX, visiblePartY) {
+                if (isInView && visiblePartY !== 'top') {
                     $(this).addClass("is-show");
                 }
             });
         });
+
     </script>
 
 
